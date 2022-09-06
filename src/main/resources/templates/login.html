@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>wbg登录</title>
+    <link th:href="@{/com/css/login.css}" rel="stylesheet" />
+</head>
+<body>
+<div class="big" align="center">
+    <div class="logintop"><div class="logintopright"><a th:href="@{/toregister}">去注册</a></div></div>
+    <form method="post" th:action="@{/login}">
+        <table align="center">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" name="username"/></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+<!--                <td><input type="password" name="userpassword"/></td>-->
+                <td><input type="password" name="password"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="登录"/></td>
+            </tr>
+        </table>
+
+
+    </form>
+    <div class="loginbottom"></div>
+</div>
+</body>
+</html>

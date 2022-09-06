@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.wbg.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.cn.wbg.entity.User">
+        <id property="userid" column="userid" jdbcType="INTEGER"/>
+        <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="userpassword" column="userpassword" jdbcType="VARCHAR"/>
+        <result property="usersex" column="usersex" jdbcType="VARCHAR"/>
+        <result property="userbirth" column="userbirth" jdbcType="DATE"/>
+        <result property="userlocalized" column="userlocalized" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        userid,createtime,username,
+        userpassword,usersex,userbirth,
+        userlocalized
+    </sql>
+    <insert id="register" parameterType="user">
+    insert into user (username,userpassword,usersex,userbirth,createtime)
+        values(#{username},#{userpassword},#{usersex},#{userbirth},#{createtime})
+    </insert>
+    <select id="queryUsernameInteger" resultType="java.lang.Integer" parameterType="string">
+        select count(1) from user where username = #{username}
+    </select>
+</mapper>

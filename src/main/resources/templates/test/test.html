@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <script>
+
+       var str = ['0001000100010001','0001000100010002','0001000100010003','0001000100010007','0001000100010001']
+       // var str = ['12','11','3','222','33']
+
+       for (let i = 0; i <str.length; i++) {
+           for (let j = 0; j < str.length+1+i; j++) {
+               if (Number (str[j].substring(str[j].length-4,str[j].length))>Number (str[j+1].substring(str[j+1].length-4,str[j+1].length))){
+                   var temp = str[j];
+                   str[j]=str[j+1];
+                   str[j+1] = temp;
+               }
+           }
+       }
+       console.log(str)
+   </script>
+</body>
+</html>

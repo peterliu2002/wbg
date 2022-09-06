@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>wbg注册页面</title>
+    <link th:href="@{/com/css/login.css}" rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{/com/js/jquery.js}"></script>
+    <style>
+        #username{
+        }
+    </style>
+</head>
+<body>
+<div class="big" align="center">
+    <div class="logintop">
+        <div class="logintopright"><a th:href="@{/toLogin}">去登录</a></div>
+    </div>
+    <form method="post" th:action="@{/register}">
+        <table align="center">
+            <tr>
+                <td>用户名：</td>
+                <td><input type="text" onblur="querusernameis()" id="username" name="username"/></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="userpassword"/></td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td><input type="radio" name="usersex" value="0"/>女
+                    <input type="radio" name="usersex" value="1"/>男
+                    <input type="radio" name="usersex" value="2"/>保密
+                    <input type="radio" name="usersex" value="3"/>多重
+                </td>
+            </tr>
+            <tr>
+                <td>生日</td>
+                <td><input type="date" name="userbirth"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" id="registerbtn" value="注册"/></td>
+            </tr>
+        </table>
+
+
+    </form>
+    <div class="loginbottom"></div>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/com/topic/js/register.js}"></script>
+</html>

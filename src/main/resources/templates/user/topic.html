@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>wbg话题页</title>
+    <link th:href="@{/com/css/bootstrap.min.css}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/com/css/dashboard.css}" rel="stylesheet">
+    <script type="text/javascript" th:src="@{/com/topic/js/topic.js}"></script>
+    <style>
+        /** {*/
+        /*    padding: 0px;*/
+        /*    margin: 0px;*/
+        /*}*/
+
+        .rightindex {
+            width: 100%;
+            height: 600px;
+            border: 1px solid red;
+            overflow-y: auto;
+            overflow-z: auto;
+            float: left;
+        }
+
+        .postion-add {
+            width: 96%;
+            height: 600px;
+            border: 1px solid yellow;
+            position: absolute;
+            display: none;
+            background-color: #9fcdff;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        .postion-add-s1 {
+            width: 50%;
+            height: 5%;
+            border: 1px solid yellow;
+            display: inline-block;
+            float: left;
+            position: relative;
+        }
+
+        .topiccent {
+            width: 100%;
+            height: 200px;
+            border: 1px solid royalblue;
+            float: left;
+        }
+
+        .spanbigdiv {
+            width: 100%;
+            height: 200px;
+            border: 1px solid royalblue;
+            float: left;
+        }
+
+        .postion-add-s2 {
+            width: 50%;
+            height: 5%;
+            border: 1px solid yellow;
+            display: inline-block;
+            float: left;
+            text-align: right;
+            position: relative;
+
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        .plq {
+            width: 100%;
+            height: 200px;
+            display: inline-block;
+            border: 1px solid yellow;
+            float: left;
+        }
+        .spanbiginput{
+            width: 100%;
+            height: 200px;
+            border: 1px solid yellow;
+            display: none;
+            position: fixed;
+            top: 500px;
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" th:src="@{/com/js/jquery.js}"></script>
+<div th:replace="commons/bar::topbar"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div th:replace="commons/bar::#sidebar(activeUri='topic')"></div>
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <div class="rightindex">
+                <table class="table table-striped table-sm">
+                    <tr>
+                        <td><a class="btn btn-sm btn-success" th:onclick="tianjiahuati()">添加话题</a></td>
+                        <td>发起者</td>
+                        <td>发起日期</td>
+                        <td>主题</td>
+                        <td>是否公开</td>
+                        <td>是否公开</td>
+                    </tr>
+
+                    <tr th:each="s,var : ${topic}">
+                        <td th:text="${var.count}"></td>
+                        <td th:text="${s.createname}"></td>
+                        <td th:text="${#dates.format(s.createdate, 'yyyy-MM-dd')}"></td>
+                        <td th:text="${s.topicname}"></td>
+                        <td th:text="${s.ispublic=='1'?'是':'否'}"></td>
+
+                        <td>
+                            <button th:if="${s.ispublic=='1'}" class="btn btn-sm btn-success"
+                                    th:onclick="ajaxtest('[[${s.topicid}]]')">进入
+                            </button>
+                            <button th:if="${s.ispublic=='0'}" class="btn btn-sm btn-danger" onclick="wuquan()">进入
+                            </button>
+                        </td>
+                        <!--                        <td th:text="${s.topicid}" onclick="onc(${s.topicid})"></td>-->
+
+                    </tr>
+                </table>
+            </div>
+            <div class="postion-add" id="PostionAddid">
+                <span class="postion-add-s1"></span>
+                <span class="postion-add-s2"><button style="float: left" onclick="huifu('')">评论</button><button class="btn btn-sm btn-danger" onclick="comoff()">关闭</button></span>
+                <div class="topiccent"></div>
+                <div class="spanbigdiv">
+                    <ul class="spanbig"></ul>
+                    <div class="spanbiginput">
+                        <input type="text" id="inputtext" />
+                        <button onclick="inputsubmit()" id="inputtextsubmit">确认</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="postion-add" id="tianjiahuati" style="text-align: center;color: red">
+                <span class="postion-add-s1"></span>
+                <span class="postion-add-s2"><button class="btn btn-sm btn-danger"
+                                                     onclick="huatioff()">关闭</button></span>
+
+                名称：<input name="createhtmc" id="createhtmc" type="text"/><br/>
+                内容：<input name="createhtnr" id="createhtnr" type="text"/><br/>
+                是否公开：<select name="createhtqx" id="createhtqx">
+                <option value="0">否</option>
+                <option selected="selected" value="1">是</option>
+
+            </select><br/>
+                <input class="btn btn-sm btn-success" type="button" onclick="createht()" value="创建"/>
+            </div>
+        </main>
+    </div>
+</div>
+<script>
+    var topcid = null;
+    function wuquan() {
+        alert("无权查看")
+    }
+
+    function createht() {
+        if ($("#createhtmc").val() !== "" && $("#createhtnr").val() !== "" && $("#createhtqx").val() !== ""
+        ) {
+            $.ajax({
+                type: "POST",
+                url: "/addtopic",
+                data: {
+                    htmc: $("#createhtmc").val(),
+                    htnr: $("#createhtnr").val(),
+                    htqx: $("#createhtqx").val()
+                },
+                success: function (data) {
+                    if (data) {
+                        alert("保存成功！！");
+                        huatioff();
+                        $("#createhtmc").val("")
+                        $("#createhtnr").val("")
+                        $("#createhtqx").val("")
+                    }
+                }
+            });
+        } else {
+            alert("创建失败")
+        }
+    }
+
+    function tianjiahuati() {
+        $("#tianjiahuati").css({"border": "2px solid red", "display": "block", "z-index": "2"});
+    }
+
+
+
+    function test(data) {
+        // console.log(data)
+    }
+
+
+
+    function ajaxtest(topicid) {
+        topcid =topicid;
+        // console.log(topicid)
+        $.ajax({
+            type: "POST",
+            url: "/comment/getonecomment",
+            data: { // 提交数据
+                "topicid": topicid
+            },
+            // data:{"topicid":topicid,"name":'刘'},
+            // contentType: "application/json;charset=utf-8",
+            // dataType: "json",
+            success: function (data) {
+                 // console.log(data.plq);
+                 toloadplq(data.plq)
+                toloadtopic(data.htnr);
+
+            }, error: function (error) {
+                console.log(error)
+            }
+        });
+
+        // console.log(comdata.plq,"plq")
+        $("#PostionAddid").css({"border": "2px solid red", "display": "block", "z-index": "2"})
+        // foechdaa();
+    }
+</script>
+</body>
+</html>

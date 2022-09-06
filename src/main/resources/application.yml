@@ -1,0 +1,23 @@
+server:
+  port: 8888
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wbg
+    username: root
+    password: 1126
+    type: com.alibaba.druid.pool.DruidDataSource
+  # 清除缓存 实现热部署
+  thymeleaf:
+    cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+# mybatis 配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.cn.wbg.entity
+  mapper-locations: classpath:mapper/*.xml

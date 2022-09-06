@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cn.wbg.mapper.CommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.cn.wbg.entity.Comment">
+            <id property="dbid" column="dbid" jdbcType="INTEGER"/>
+            <result property="createname" column="createname" jdbcType="VARCHAR"/>
+            <result property="createdate" column="createdate" jdbcType="TIMESTAMP"/>
+            <result property="isdel" column="isdel" jdbcType="VARCHAR"/>
+            <result property="topicid" column="topicid" jdbcType="INTEGER"/>
+            <result property="cid" column="cid" jdbcType="VARCHAR"/>
+            <result property="pid" column="pid" jdbcType="VARCHAR"/>
+            <result property="plnr" column="plnr" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        dbid,createname,createdate,
+        isdel,topicid,cid,
+        pid,plnr
+    </sql>
+    <insert id="saveNewComment">
+        insert into comment (createname,createdate,topicid,cid,pid,plnr) values (#{createname},#{createdate},#{topicid},#{cid},#{pid},#{plnr})
+    </insert>
+    <select id="querycom" resultType="com.cn.wbg.entity.Comment">
+        select * from comment where topicid = #{topicid}
+    </select>
+    <select id="queryCidString" resultType="java.lang.String">
+        select cid from comment where  dbid = #{dbid} and topicid = #{topicid}
+    </select>
+    <select id="queryCidlist" resultType="java.lang.String">
+        SELECT cid FROM comment WHERE pid = (SELECT cid FROM comment WHERE dbid = #{dbid} ) and topicid = #{topicid}
+    </select>
+    <select id="querycidlist" resultType="java.lang.String">
+        select cid from  comment where  (pid = '' or  pid is null ) and topicid = #{topicid}
+    </select>
+</mapper>
