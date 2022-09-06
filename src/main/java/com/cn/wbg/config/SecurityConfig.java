@@ -53,7 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().authorizeRequests() // 所有请求都要验证
                 .antMatchers("/login","/main",
                         "/comment/queryusername",
-                        "/com/**","/toregister","/register","/toIndex","/comment/getname").permitAll() // 放行登录请求和静态资源
+                        "/com/**","/toregister","/register","/toIndex").permitAll() // 放行登录请求和静态资源
 //                .antMatchers("/toHappy").hasAuthority("ADMIN")
 //                .antMatchers("/aa").hasAuthority("ROLE_ADMIN")
                 .anyRequest().authenticated() // 认证后放行所有请求
