@@ -19,5 +19,5 @@ public interface UserService extends IServive<User> {
     User queryuseris(String user);
 
     Integer register(User user);
-    Integer queryUsernameInteger(String username);
+    Integer queryUsernameInteger(String usercode);
 }

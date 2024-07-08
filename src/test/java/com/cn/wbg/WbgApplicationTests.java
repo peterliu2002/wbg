@@ -1,10 +1,6 @@
 package com.cn.wbg;
 
-import com.cn.wbg.entity.Topic;
 import com.cn.wbg.entity.User;
-import com.cn.wbg.mapper.TopicMapper;
-import com.cn.wbg.service.TopicService;
-import com.cn.wbg.service.UserService;
 import com.cn.wbg.service.impl.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

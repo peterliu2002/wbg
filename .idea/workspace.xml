@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2d6a70b-4517-4b44-8c5d-d0b365888fad" name="默认的" comment="new">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ac140466-a87f-431d-92bb-fd67083fd4fb.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/ac140466-a87f-431d-92bb-fd67083fd4fb/storage_v2/_src_/schema/COME_GOLD.u0zAQA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/baae1910-50c1-4c54-b8a8-3288fa10428e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/baae1910-50c1-4c54-b8a8-3288fa10428e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/baae1910-50c1-4c54-b8a8-3288fa10428e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/baae1910-50c1-4c54-b8a8-3288fa10428e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/baae1910-50c1-4c54-b8a8-3288fa10428e/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/savedata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/WbgApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/config/CorsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/config/SecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/entity/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/mapper/BaseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/service/IServive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/service/impl/ServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/cn/wbg/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/css/dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/js/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/topic/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/com/topic/js/topic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/commons/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/game/game1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/test/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.cn.wbg.WbgApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.cn.wbg.WbgApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cn/wbg/WbgApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/wbg-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/wbg-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wbg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/介绍.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/controller/ComJSONController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/controller/TopicController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/entity/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/entity/Topic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/mapper/CommentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/mapper/TopicMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/TopicService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/impl/CommentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/impl/TopicServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cn/wbg/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TopicMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/topic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cn/wbg/WbgApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cn/wbg/WbgApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="FxmlFile" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../Maven/maven" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\Maven\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2CjjPkDiE33991KK52aho37CCgw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.WbgApplication.executor": "Debug",
+    "WebServerToolWindowFactoryState": "false",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java  file/ZyPlayer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3839713",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "88ac3c7cf7e9f77feaf7d969346863d0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java  file\wbg\src\main\resources\templates\user" />
+      <recent name="D:\Java  file\wbg\src\main\resources\static\com" />
+      <recent name="D:\Java  file\wbg\src\main\resources\static" />
+    </key>
+    <key name="DestinationChooserDialog.Package.RECENTS_KEY">
+      <recent name="com.cn.wbg.entity" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cn.wbg.controller" />
+      <recent name="com.cn.wbg.config" />
+      <recent name="com.cn.wbg.mapper" />
+      <recent name="com.cn.wbg.service.impl" />
+      <recent name="com.cn.wbg.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java  file\wbg\src\main\resources\static\com\js" />
+      <recent name="D:\Java  file\wbg\src\main\resources\static\com\css" />
+      <recent name="D:\Java  file\wbg\src\main\resources\templates" />
+      <recent name="D:\Java  file\wbg\src\main\resources\static\css" />
+      <recent name="D:\Java  file\wbg\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="true" />
+      <visibility group="Grunt tasks" flag="true" />
+      <visibility group="Gulp tasks" flag="true" />
+      <visibility group="Maven goals" flag="true" />
+      <visibility group="Node.js" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="npm" flag="true" />
+      <visibility group="yarn" flag="true" />
+      <visibility group="最近的项目" flag="true" />
+      <visibility group="运行配置" flag="true" />
+    </myKeys>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WbgApplication">
+    <configuration name="WbgApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cn.wbg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cn.wbg" />
+      <option name="MAIN_CLASS_NAME" value="com.cn.wbg.WbgApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WbgApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cn.wbg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cn.wbg" />
+      <option name="MAIN_CLASS_NAME" value="com.cn.wbg.WbgApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WbgApplicationTests.tetopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cn.wbg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cn.wbg" />
+      <option name="MAIN_CLASS_NAME" value="com.cn.wbg.WbgApplicationTests" />
+      <option name="METHOD_NAME" value="tetopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WbgApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wbg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cn.wbg.WbgApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WbgApplicationTests.tetopic" />
+        <item itemvalue="JUnit.WbgApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.WbgApplicationTests.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2d6a70b-4517-4b44-8c5d-d0b365888fad" name="默认的" comment="" />
+      <created>1659322865314</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659322865314</updated>
+      <workItem from="1659322876442" duration="17254000" />
+      <workItem from="1659400350340" duration="15710000" />
+      <workItem from="1659512090039" duration="6623000" />
+      <workItem from="1659574613090" duration="19360000" />
+      <workItem from="1659662022080" duration="9370000" />
+      <workItem from="1659691683305" duration="739000" />
+      <workItem from="1659937618143" duration="1150000" />
+      <workItem from="1660111095600" duration="11185000" />
+      <workItem from="1660180273408" duration="9888000" />
+      <workItem from="1660267914800" duration="5788000" />
+      <workItem from="1661147652448" duration="11000" />
+      <workItem from="1661151151515" duration="344000" />
+      <workItem from="1661152011484" duration="1976000" />
+      <workItem from="1661224634999" duration="3816000" />
+      <workItem from="1661478047564" duration="686000" />
+      <workItem from="1662357907389" duration="173000" />
+      <workItem from="1662358152348" duration="25000" />
+      <workItem from="1662358196232" duration="2407000" />
+      <workItem from="1662426749772" duration="3630000" />
+      <workItem from="1662531868515" duration="94000" />
+      <workItem from="1662617810165" duration="5581000" />
+      <workItem from="1662683629696" duration="2212000" />
+      <workItem from="1663037081820" duration="607000" />
+      <workItem from="1663121083798" duration="829000" />
+      <workItem from="1663203440339" duration="598000" />
+      <workItem from="1663297462248" duration="627000" />
+      <workItem from="1663569846428" duration="937000" />
+      <workItem from="1663577346850" duration="613000" />
+      <workItem from="1663651904445" duration="1636000" />
+      <workItem from="1663721098965" duration="1732000" />
+      <workItem from="1663894317254" duration="6082000" />
+      <workItem from="1663987832114" duration="25000" />
+      <workItem from="1664344513836" duration="3724000" />
+      <workItem from="1664436109493" duration="2071000" />
+      <workItem from="1665361765260" duration="16000" />
+      <workItem from="1665452532234" duration="2981000" />
+      <workItem from="1665562838345" duration="24000" />
+      <workItem from="1666315022440" duration="364000" />
+      <workItem from="1666338615481" duration="45000" />
+      <workItem from="1666597714998" duration="4287000" />
+      <workItem from="1666659456444" duration="5900000" />
+      <workItem from="1667205651431" duration="1731000" />
+      <workItem from="1667351240530" duration="486000" />
+      <workItem from="1667369550868" duration="67000" />
+      <workItem from="1668129914870" duration="1921000" />
+      <workItem from="1668153711756" duration="5000" />
+      <workItem from="1668482641305" duration="5908000" />
+      <workItem from="1668647077416" duration="1404000" />
+      <workItem from="1669860787015" duration="2313000" />
+      <workItem from="1670040343631" duration="658000" />
+      <workItem from="1670200988942" duration="1846000" />
+      <workItem from="1670305174831" duration="20000" />
+      <workItem from="1674365207952" duration="195000" />
+      <workItem from="1677922264846" duration="481000" />
+      <workItem from="1686144499845" duration="23000" />
+      <workItem from="1691160021291" duration="63000" />
+      <workItem from="1691160100172" duration="10000" />
+      <workItem from="1691161026308" duration="118000" />
+      <workItem from="1692458883115" duration="9000" />
+      <workItem from="1695815812424" duration="138000" />
+      <workItem from="1695819425228" duration="599000" />
+      <workItem from="1696083910537" duration="24000" />
+      <workItem from="1717511977162" duration="236000" />
+      <workItem from="1717597760942" duration="313000" />
+      <workItem from="1720176142528" duration="17000" />
+      <workItem from="1720442780816" duration="476000" />
+      <workItem from="1720443787275" duration="4166000" />
+    </task>
+    <task id="LOCAL-00001" summary="new">
+      <created>1662430270440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662430270440</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new">
+      <created>1662430477647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662430477647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

@@ -49,11 +49,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.formLogin()
                 .loginPage("/toLogin") // 去往登录页面
                 .loginProcessingUrl("/login") // 登录表单提交路径
+                //表单名称更改/login
+                .usernameParameter("usercode").passwordParameter("password")
                 .defaultSuccessUrl("/toIndex").permitAll() // 默认登陆成功跳转的页面
                 .and().authorizeRequests() // 所有请求都要验证
                 .antMatchers("/login","/main",
                         "/comment/queryusername",
-                        "/com/**","/toregister","/register","/toIndex").permitAll() // 放行登录请求和静态资源
+                        "/com/**","/toregister","/register","/toIndex","/comment/quername").permitAll() // 放行登录请求和静态资源
 //                .antMatchers("/toHappy").hasAuthority("ADMIN")
 //                .antMatchers("/aa").hasAuthority("ROLE_ADMIN")
                 .anyRequest().authenticated() // 认证后放行所有请求

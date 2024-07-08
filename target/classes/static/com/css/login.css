@@ -1,0 +1,33 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.big {
+    margin: auto;
+    margin-top: 150px;
+    width: 400px;
+    height: 400px;
+}
+
+table {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.loginbottom {
+    margin-top:100px ;
+    width: 400px;
+    height: 100px;
+    float: left;
+
+}
+.logintop{
+    width: 400px;
+    height: 50px;
+    float: left;
+}
+.logintopright{
+    float: right;
+
+}

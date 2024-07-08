@@ -34,18 +34,18 @@ public class UserController {
     @RequestMapping("/register")
     public String toregister(@RequestParam("username") String username,
                              @RequestParam("userpassword")String userpassword ,
-                             @RequestParam("usersex")String usersex,
-                             @RequestParam("userbirth")String userbirth) {
+                             @RequestParam("usercode") String usercode) {
         User user = new User();
-        user.setUsersex(usersex);
+//        user.setUsersex(usersex);
         user.setUserpassword(userpassword);
         user.setUsername(username);
-        user.setCreatetime(new Date());
-        try {
-            user.setUserbirth(new SimpleDateFormat("yyyy-MM-dd").parse(userbirth));
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
+        user.setUsercode(usercode);
+//        user.setCreatetime(new Date());
+//        try {
+//            user.setUserbirth(new SimpleDateFormat("yyyy-MM-dd").parse(userbirth));
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
         userService.register(user);
         return "login";
     }

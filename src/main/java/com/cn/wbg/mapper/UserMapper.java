@@ -15,10 +15,10 @@ public interface UserMapper extends BaseMapper<User> {
     /**
      * 查询此用户是否存在
      * */
-    @Select("select * from user where username = #{username} and isdel = 0")
-    User queryuseris(String username);
+    @Select("select * from USER where usercode = #{usercode} ")
+    User queryuseris(String usercode);
 
     Integer register(User user);
 
-    Integer queryUsernameInteger(String username);
+    Integer queryUsernameInteger(String usercode);
 }

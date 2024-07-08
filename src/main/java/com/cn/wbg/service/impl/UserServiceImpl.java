@@ -35,8 +35,8 @@ implements UserDetailsService,UserService{
     }
 
     @Override
-    public Integer queryUsernameInteger(String username) {
-        return userMapper.queryUsernameInteger(username);
+    public Integer queryUsernameInteger(String usercode) {
+        return userMapper.queryUsernameInteger(usercode);
     }
 
     @Override
@@ -55,17 +55,17 @@ implements UserDetailsService,UserService{
     }
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println(username+"loadUserByUsername");
+    public UserDetails loadUserByUsername(String usercode) throws UsernameNotFoundException {
+        System.out.println(usercode+"loadUserByUsername");
         // 根据 s 查询用户
-        User user = userMapper.queryuseris(username);
+        User user = userMapper.queryuseris(usercode);
         if (user == null) {
             throw new UsernameNotFoundException("用户不存在");
         }
         List<GrantedAuthority> roles = AuthorityUtils.commaSeparatedStringToAuthorityList("admin");
-        System.out.println("登录：---"+user.getUsername()+
+        System.out.println("登录：---"+user.getUsercode()+
                 user.getUserpassword());
-        return new org.springframework.security.core.userdetails.User(user.getUsername(),
+        return new org.springframework.security.core.userdetails.User(user.getUsercode(),
                 user.getUserpassword()
                 //new BCryptPasswordEncoder().encode(user.getPassword())
 //                new BCryptPasswordEncoder().encode(user.getUserpassword())
